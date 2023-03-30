@@ -61,14 +61,14 @@ bool operator==(double s,const ComplexNumber &c){
 	if(s == c.real && s == c.imag) return true;
 	else return false;
 }
-//"https://cplusplus.com/reference/cmath/atan/"
+
 double ComplexNumber::abs(){
 	double a = pow(real,2);
 	double b = pow(imag,2);
 	double c = sqrt(a+b);
 	return c;
 }
-//"https://www.intmath.com/complex-numbers/4-polar-form.php"
+
 double ComplexNumber::angle(){
 	double a =atan2(imag,real)*57.2957795;
 	return a; 
